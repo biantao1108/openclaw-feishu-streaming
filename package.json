@@ -1,7 +1,8 @@
 {
   "name": "@openclaw/feishu",
   "version": "2026.3.13",
-  "description": "OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng)",
+  "author": "biantao@outlook.com",
+  "description": "OpenClaw Feishu/Lark channel plugin with improved CardKit streaming (forked from @openclaw/feishu)",
   "type": "module",
   "dependencies": {
     "@larksuiteoapi/node-sdk": "^1.59.0",

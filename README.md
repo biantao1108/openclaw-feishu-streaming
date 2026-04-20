@@ -1,5 +1,7 @@
 # openclaw-feishu-streaming
 
+**Author:** biantao@outlook.com
+
 Enhanced Feishu/Lark channel plugin for OpenClaw with improved CardKit streaming output.
 
 ## Overview
