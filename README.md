@@ -88,6 +88,7 @@ contact:contact.base:readonly
 im:chat.members:bot_access
 im:chat.members:read
 im:chat:read
+im:message
 im:message.group_at_msg:readonly
 im:message.group_msg
 im:message.p2p_msg:readonly
@@ -95,9 +96,9 @@ im:message:readonly
 im:message:send_as_bot
 im:message:update
 im:message.reactions:write_only
+im:app_feed_card:write
 optical_char_recognition:image
 speech_to_text:speech
-contact:contact.base:readonly
 ```
 
 ### Permission Descriptions
@@ -112,6 +113,7 @@ contact:contact.base:readonly
 | `im:chat.members:bot_access` | tenant | 机器人获取群成员权限，群聊必需 |
 | `im:chat.members:read` | tenant | 读取会话成员信息，区分群内用户 |
 | `im:chat:read` | tenant | 读取会话信息，识别单聊/群聊场景 |
+| `im:message` | tenant | 获取与发送单聊、群组消息，消息接收与发送核心权限 |
 | `im:message.group_at_msg:readonly` | tenant | 读取@机器人消息，对话触发必需 |
 | `im:message.group_msg` | tenant | 接收群聊消息，机器人群聊对话必需 |
 | `im:message.p2p_msg:readonly` | tenant | 接收单聊消息，机器人私聊对话必需 |
@@ -119,6 +121,7 @@ contact:contact.base:readonly
 | `im:message:send_as_bot` | tenant | 机器人以自身身份发送消息，核心必选 |
 | `im:message:update` | tenant | 编辑/更新已发消息，用于流式回复、消息修正 |
 | `im:message.reactions:write_only` | tenant | 机器人给消息添加表情互动 |
+| `im:app_feed_card:write` | tenant | 创建、更新、删除应用消息流卡片，CardKit 流式输出必需 |
 | `optical_char_recognition:image` | tenant | 图片OCR，识别用户发送图片中的文字 |
 | `speech_to_text:speech` | tenant | 语音转文字，处理用户语音消息 |
 
